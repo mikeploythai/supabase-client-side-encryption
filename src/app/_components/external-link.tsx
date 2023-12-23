@@ -1,5 +1,5 @@
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import { AnchorHTMLAttributes } from "react";
+import { type AnchorHTMLAttributes } from "react";
 import { cn } from "~/lib/cn";
 import { buttonVariants } from "./ui/button";
 

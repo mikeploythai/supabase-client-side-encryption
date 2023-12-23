@@ -19,9 +19,11 @@ async function createSupabaseServerClient() {
           return cookieStore.get(name)?.value;
         },
         set(name: string, value: string, options: CookieOptions) {
+          // eslint-disable-next-line
           cookieStore.set({ name, value, ...options });
         },
         remove(name: string, options: CookieOptions) {
+          // eslint-disable-next-line
           cookieStore.set({ name, value: "", ...options });
         },
       },
