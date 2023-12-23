@@ -3,9 +3,9 @@ import Dexie, { type Table } from "dexie";
 type User = {
   id?: number;
   email: string;
-  encryptedMasterKey: ArrayBuffer;
-  salt: Uint8Array;
-  iv: Uint8Array;
+  encryptedMasterKey: string;
+  salt: string;
+  iv: string;
 };
 
 class DexieDB extends Dexie {
